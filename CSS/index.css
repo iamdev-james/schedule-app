@@ -36,6 +36,16 @@ form{
   position: relative;
   margin-top: 50px;
 }
+/* Guide and About */
+.new_user {
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  background: whitesmoke;
+  box-shadow: 1px 1px 1px rgb(77, 4, 4);
+  z-index: 1.5;
+}
+/* End */
 .text-align-center{
   text-align: center;
 }
@@ -88,6 +98,7 @@ header{
   transform: skew(10deg);
 }
 section#welcome{
+  margin-top: 2rem;
   height: 60px;
   width: 100%;
   text-align: center;
@@ -152,6 +163,14 @@ input:checked{
 }
 
 /* Schedule Section */
+#schedule {
+  margin-top: 5rem;
+}
+#greeting{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
 #table{
   table-layout: auto;
   width: 95%;

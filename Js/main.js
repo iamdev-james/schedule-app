@@ -1,3 +1,17 @@
+// BASIC VALIDATIONS AND GREETING
+let greet = document.getElementById('greeting')
+let T_date = new Date();
+if(T_date.getHours() >= 0 && T_date.getHours() <= 11){
+  greet.innerHTML =  `Oh! It's a bright morning`
+}else if(T_date.getHours() >= 12 && T_date.getHours() <= 4){
+  greet.innerHTML =  `What a sunny afternoon`
+}else {
+  greet.innerHTML = `Hey, hope you've done all the tasks`
+}
+
+
+
+
 let variables = {
   greetings: document.getElementById('greetings'),
   start: document.getElementById('todo-date-start'),
