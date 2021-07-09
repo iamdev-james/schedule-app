@@ -16,8 +16,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-}
+  overflow-x: hidden;
+ }
 .header{
   font-style: italic;
 }
@@ -38,12 +38,35 @@ form{
 }
 /* Guide and About */
 .new_user {
+  /* display: none; */
   position: absolute;
-  left: 1%;
-  right: 1%;
+  top: 3%;
+  left: 5%;
+  right: 5%;
   background: whitesmoke;
   box-shadow: 1px 1px 1px rgb(77, 4, 4);
-  z-index: 1.5;
+  z-index: 5;
+}
+#text{
+  padding: 22px;
+}
+ul{
+  text-align: justify;
+}
+.clear_btn{
+  padding: 15px 90px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background: rgb(63, 4, 4);
+  transition: all 1s ease-out;
+}
+.clear_btn:focus{
+  transform: scale(1.2);
+  color: rgb(63, 4, 4);
+  background: white;
 }
 /* End */
 .text-align-center{
@@ -63,6 +86,17 @@ a{
   color: rgb(7, 7, 143);
   font-size: 18px;
 }
+.hr_ln{
+  width: 40px;
+  height: 1px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 45%;
+  margin-bottom: 17px;
+  color: rgb(136, 4, 4);
+  background: rgb(136, 4, 4);
+  border-radius: 50%;
+}
 .ML-A{margin: auto;}
 .ML-1{margin: 5px 10px;}
 .MT-5r{margin-top: 5rem;}
@@ -80,6 +114,7 @@ main{
   font-style: Lucida;
   background: var(--bg-color);
   color: var(--color);
+  z-index: 1;
 }
 header{
   height: 50px;

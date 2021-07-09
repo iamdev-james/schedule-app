@@ -23,14 +23,31 @@
             Hey, welcome to <b>PLAGRAM.</b>
          <section id="about">
             About 
+            <div class="hr_ln"></div>
            <div id="about_text">
-              This is
+              Best app to schedule your daily activity
+          <h3>FEATURES</h3>
+          <div class="hr_ln"></div>
+            <ul>
+             <i><li>One or multiple agendas</li>
+              <li>Synchronisation planning</li>
+              <li>Custom table with row and column</li>
+              <li>Predifined schedule templates</li>
+              <li>Easy to use</li>
+              <li>Stores data locally(using local storage)</li>
+              <li>A guide</li>
+              <li>Schedule with in-built time option</li>
+            <li>All data get clear after 24 hours</li></i>
+            </ul>
             </div>
          </section>
-          Here is a quick guide for you.<br>
-        <small>This app stores everything on your device, schedules can only be viewed on the device you book them with</small>
+        <fieldset>
+          <legend>Here is a quick guide for you</legend><br>
+        <small>This app make use of your browser local storage i.e it stores all your data on your browser local storage. Therefore schedules cannot be viewed on any other device aside the one your plan them with</small></fieldset>
+      <input type="text" id="name" class="input-box-design" placeholder="Enter your name" required>
       </div>
-      <button>OK</button>
+      <button id="clear_msg" class="clear_btn">OK</button>
+        <div id="msg_1" class="error"></div>
         </div>
         <div id="greetings" class="header FS-20">
             HEY, WHAT'S YOUR PLAN FOR TODAY
@@ -60,6 +77,7 @@
         <button type="submit" id="add-todo" class="PD-3 ML-A MT-5r" onclick="return addTodo()">+ Schedule</button>
       </div>
     </form>
+      <button id="clear-button">Clear all task</button>
   </div>
 </div>
 <h2 id="null-value" class="error"></h2>

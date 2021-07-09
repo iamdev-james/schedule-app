@@ -1,3 +1,24 @@
+//For new devices
+let w_user = document.getElementById('new_user')
+window.onload = function(){
+  if(localStorage.getItem('pgUSERNAME')){
+   w_user.style.display = "none";
+  }else {
+   w_user.style.display = "inline";
+  }
+};
+
+let C_btn = document.getElementById('clear_msg');
+let username = document.getElementById('name');
+let msg_1 = document.getElementById('msg_1')
+C_btn.onclick = function(){
+if (username.value.length > 2){
+window.localStorage.setItem('pgUSERNAME', username.value)
+  w_user.style.display = "none";
+} else {
+  msg_1.innerHTML = "Kindly input your name"
+}};
+
 // BASIC VALIDATIONS AND GREETING
 let greet = document.getElementById('greeting')
 let T_date = new Date();
@@ -9,8 +30,15 @@ if(T_date.getHours() >= 0 && T_date.getHours() <= 11){
   greet.innerHTML = `Hey, hope you've done all the tasks`
 }
 
-
-
+//Clearing of data
+var clear_btn = document.getElementById("clear-button");
+clear_btn.onclick = function(){
+  if(window.localStorage.getItem('mySchedule')){
+   var confirm = confirm("Are you sure you want to clear your tasks?");
+   if(confirm == true)
+   window.localStorage.removeItem('mySchedule');
+  }
+}
 
 let variables = {
   greetings: document.getElementById('greetings'),
