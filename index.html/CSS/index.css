@@ -1,0 +1,239 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color: rgb(7, 7, 143);
+  --bg-color: white;
+  --max-width: 600px;
+  --default-font-size: 19px;
+  --bg-transparent: transparent;
+}
+body{
+  color: var(--color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+ }
+.header{
+  font-style: italic;
+}
+h1 span{
+  font-size: 52px;
+  margin-left: -9px;
+  text-shadow: 3px 4px 1px rgb(19, 4, 4);
+}
+/* UTILITY CLASSES */
+form{
+  color: rgb(7, 7, 84);
+}
+#container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+/* Guide and About */
+.new_user {
+  /* display: none; */
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  right: 5%;
+  background: whitesmoke;
+  box-shadow: 1px 1px 1px rgb(77, 4, 4);
+  z-index: 5;
+}
+#text{
+  padding: 22px;
+}
+ul{
+  text-align: justify;
+}
+.clear_btn{
+  padding: 15px 90px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background: rgb(63, 4, 4);
+  transition: all 1s ease-out;
+}
+.clear_btn:focus{
+  transform: scale(1.2);
+  color: rgb(63, 4, 4);
+  background: white;
+}
+/* End */
+.text-align-center{
+  text-align: center;
+}
+.input-box-design{
+  width: 15rem;
+  height: 3rem;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 1px solid rgb(2, 38, 70);
+  background: var(--bg-transparent);
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: rgb(7, 7, 143);
+  font-size: 18px;
+}
+.hr_ln{
+  width: 40px;
+  height: 1px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 45%;
+  margin-bottom: 17px;
+  color: rgb(136, 4, 4);
+  background: rgb(136, 4, 4);
+  border-radius: 50%;
+}
+.ML-A{margin: auto;}
+.ML-1{margin: 5px 10px;}
+.MT-5r{margin-top: 5rem;}
+.PD-1{padding: 7px 5px;}
+.PD-2{padding: 10px 8px;}
+.PD-3{padding: 15px 10px;}
+.FS-20{font-size: 20px;}
+/* Utility classes end */
+
+main{
+  width: var(--max-width);
+  height: 100vh;
+  font-size: large;
+  font-weight: 700;
+  font-style: Lucida;
+  background: var(--bg-color);
+  color: var(--color);
+  z-index: 1;
+}
+header{
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.page-title{
+  position: absolute;
+  color: rgb(136, 4, 4);
+  text-shadow: 2px 3px 1.5px rgb(24, 1, 1);
+  top: 7px;
+  left: 15px;
+  font-size: 40px;
+  background: white;
+  transform: skew(10deg);
+}
+section#welcome{
+  margin-top: 2rem;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+}
+#addToSchedule{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(12, 11, 11, 0.918);
+}
+#add-todo{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: var(--default-font-size);
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  color: rgba(12, 11, 11, 0.918);
+  margin-bottom: -100px;
+  outline: none;
+  border: 1px solid rgb(2, 2, 66);
+  border-radius: 30%;
+  box-shadow: 1px 1px 2px rgb(1, 1, 20);
+  transition: all 1s ease;
+}
+#add-todo:hover{
+  background: rgb(2, 2, 66);
+  color: aliceblue;
+}
+.formCaption{
+  font-size: var(--default-font-size);
+}
+
+#veiw-schedule{
+  position: absolute;
+  top: -75px;
+  right: 3px;
+  background: white;
+  border: 2px solid rgb(2, 2, 66);
+  box-shadow: 1.5px 1.5px 4px rgb(1, 1, 20);
+  transition: transform 1s ease-in;
+}
+#veiw-schedule:hover{
+  transform: scale(1.1);
+}
+input:checkbox{
+  display: inline;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-bottom: 1px solid #333
+}
+input:checked{
+  text-decoration: line-through;
+}
+.error{
+  color: rgb(189, 28, 28);
+  font-size: 17px;
+}
+
+/* Schedule Section */
+#schedule {
+  margin-top: 5rem;
+}
+#greeting{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+#table{
+  table-layout: auto;
+  width: 95%;
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-left: 11px;
+  border: 1px solid rgb(1, 1, 20);
+  border-collapse: collapse;
+  border-spacing: 5px;
+}
+th{
+  font-size: 19px;
+  color: rgb(165, 165, 245);
+  height: 4rem;
+  background: linear-gradient(35deg, red, rgb(175, 9, 9), rgb(63, 4, 4));
+}
+th,td {
+  padding: 20px auto;
+  border-bottom: 1px solid rgb(1, 1, 20);
+}
+td:hover{
+  transform: scale(1.2);
+  font-style: italic;
+}
+tr{
+  padding: 1.5rem auto;
+}
+tr:nth-child(even){
+  background: #f0a2a2;
+}
+

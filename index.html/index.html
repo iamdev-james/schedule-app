@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple app to plan your day, and make it a successful one">
+  <link rel="stylesheet" href="./CSS/index.css">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <title>Schedule App | Add</title>
+</head>
+<body>
+  <main>
+    <header class="text-align-center">
+      <h1 class="page-title">P<span>G</span></h1>
+      <img src="" alt="">
+      <button id="veiw-schedule" class="PD-3 ML-A MT-5r"><a href="./schedule.html">Veiw my schedule</a></button>
+    </header>
+    <section id="welcome">
+      <div id="greeting"></div>
+      <div id="container">
+        <div id="new_user" class="new_user">
+          <div id="text">
+            Hey, welcome to <b>PLAGRAM.</b>
+         <section id="about">
+            About 
+            <div class="hr_ln"></div>
+           <div id="about_text">
+              Best app to schedule your daily activity
+          <h3>FEATURES</h3>
+          <div class="hr_ln"></div>
+            <ul>
+             <i><li>One or multiple agendas</li>
+              <li>Synchronisation planning</li>
+              <li>Custom table with row and column</li>
+              <li>Predifined schedule templates</li>
+              <li>Easy to use</li>
+              <li>Stores data locally(using local storage)</li>
+              <li>A guide</li>
+              <li>Schedule with in-built time option</li>
+            <li>All data get clear after 24 hours</li></i>
+            </ul>
+            </div>
+         </section>
+        <fieldset>
+          <legend>Here is a quick guide for you</legend><br>
+        <small>This app make use of your browser local storage i.e it stores all your data on your browser local storage. Therefore schedules cannot be viewed on any other device aside the one your plan them with</small></fieldset>
+      <input type="text" id="name" class="input-box-design" placeholder="Enter your name" required>
+      </div>
+      <button id="clear_msg" class="clear_btn">OK</button>
+        <div id="msg_1" class="error"></div>
+        </div>
+        <div id="greetings" class="header FS-20">
+            HEY, WHAT'S YOUR PLAN FOR TODAY
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="container">
+      <div id="addToSchedule" class="planMyDay, PD-2">
+        <form id="schedule-today">
+          <p class="formCaption, text-align-center, PD-1"></p>
+          <!--TIME TO START -->
+        <div id="date" class="PD-2 ">
+          <p>Enter time to start</p>
+          <input type="time"class="input-box-design"  id="todo-date-start">
+        </div>
+          <!-- TASK -->
+        <div id="task" class="PD-2 ">
+          <input type="text" id="todo-item" placeholder="Enter task to be carried out" class="input-box-design">
+        </div>
+          <!--TIME TO COMPLETE-->
+        <div id="date2" class="PD-2 ">
+          <p>Enter time to complete it</p>
+          <input type="time" class="input-box-design" id="todo-date-end">
+        </div>
+        <div id="container" class="ML-A">
+        <button type="submit" id="add-todo" class="PD-3 ML-A MT-5r" onclick="return addTodo()">+ Schedule</button>
+      </div>
+    </form>
+      <button id="clear-button">Clear all task</button>
+  </div>
+</div>
+<h2 id="null-value" class="error"></h2>
+</section>
+  </main>
+  <script src="./Js/main.js"></script>
+</body>
+</html>
