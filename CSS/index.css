@@ -203,14 +203,14 @@ input:checked{
 }
 #greeting{
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
 }
 #greetings{
   border: solid 1px red;
   width: 20rem;
   margin-top: -40px;
-  margin-left: 8%;
+  margin-left: 20%;
 }
 #table{
   table-layout: auto;
@@ -263,4 +263,12 @@ tr:nth-child(even){
   border-style: dashed;
   background: rgb(3, 4, 56);
   color: white;
+}
+@media screen and (max-width: 375px) {
+  main{
+    width: 495px;
+  }
+  #greetings{
+    margin-left: 9%;
+  }
 }
