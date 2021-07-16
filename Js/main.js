@@ -32,13 +32,6 @@ if(T_date.getHours() >= 0 && T_date.getHours() <= 11){
 
 //Clearing of data
 var clear_btn = document.getElementById("clear-button");
-clear_btn.onclick = function(){
-  if(window.localStorage.getItem('mySchedule')){
-   var confirm = confirm("Are you sure you want to clear your tasks?");
-   if(confirm == true)
-   window.localStorage.removeItem('mySchedule');
-  }
-}
 
 let variables = {
   greetings: document.getElementById('greetings'),
@@ -76,25 +69,6 @@ let variables = {
         return false;
       }
 };
-
-
-
-//SCHEDULE SECTION 
-schedule_variables = {
-  table: document.getElementById('table'),
-  t_body: document.getElementById('tbody'),
- }
-
-let g_schedule = JSON.parse(window.localStorage.getItem('mySchedule'));
-if(window.localStorage.getItem('mySchedule')){
-  let schedule_table = g_schedule.map(g => {
-   return `<input type="checkbox" id= "key"><tr><td>${g.start}</td><td>${g.task}</td><td>${g.end}</td></tr>`
-  }).join('');
-schedule_variables.t_body.innerHTML = schedule_table
-};
-
-
-
 
 
 

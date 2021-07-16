@@ -34,7 +34,7 @@ form{
   width: 100%;
   height: 100%;
   position: relative;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 /* Guide and About */
 .new_user {
@@ -103,7 +103,7 @@ a{
 .PD-1{padding: 7px 5px;}
 .PD-2{padding: 10px 8px;}
 .PD-3{padding: 15px 10px;}
-.FS-20{font-size: 20px;}
+.FS-20{font-size: 19px;}
 /* Utility classes end */
 
 main{
@@ -206,6 +206,12 @@ input:checked{
   font-size: 25px;
   font-weight: 700;
 }
+#greetings{
+  border: solid 1px red;
+  width: 20rem;
+  margin-top: -40px;
+  margin-left: 8%;
+}
 #table{
   table-layout: auto;
   width: 95%;
@@ -236,4 +242,25 @@ tr{
 tr:nth-child(even){
   background: #f0a2a2;
 }
-
+#key{
+  height: 18px;
+  width: 20px;
+  border: none;
+}
+#key:checked{
+  text-decoration: line-through;
+}
+#clear-button{
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: solid 1.5px rgb(3, 4, 56);
+}
+#clear-button:hover{
+  border-style: dashed;
+  background: rgb(3, 4, 56);
+  color: white;
+}
